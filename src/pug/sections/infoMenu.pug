@@ -1,0 +1,24 @@
+mixin section(title, text, buttons, link)
+  section.infoSection
+    .infoContent
+      h1.infoTitle= title
+      p.infoText= text
+      .infoBtnContainer
+        each button, index in buttons
+          a(href=link[index] ? link[index] : '#' class=link[index] ? '' : 'comingSoon').infoBtn= button
+
+
+
+
+#infoPage
+  
+  +section('Full Stack Developer', 'Using the MERN Stack (as well as the MEAN Stack), Vishal builds high quality, server side web applications. Most notably, Vishal, with conjuction with NOVA (Avon High School\'s Junior Achievement company), was the developer of their Teen Job Match service. This service matches teens in the Farmington Valley (CT) area with employers who need work done, such as lawnmowing, babysitting, or computer help.', ['Teen Job Match'], ['http://www.teenjobmatch.net'])
+  
+  +section('Entrepreneur', 'Vishal dreams of one day starting a major company of his own. To achieve this goal, he has founded or co-founded several small businesses of his own. He is currently working on his freelance web development agency, Virtus Solutions, where he builds professional websites, web apps, and/or mobile apps for companies. In addition, he is a co-founder of NOVA, a for profit company club run in Avon High School. NOVA, in addition to the Teen Job Match service described earlier, also sells other products, included Avon High School themed water bottles', ['Virtus Solutions', 'Teen Job Match', 'Nova Water Bottles'], ['', 'http://www.teenjobmatch.net', ''])
+  
+  +section('Mobile App Developer', '', ['Apps'], false)
+  
+  +section('Computer Enthusiast', '', ['Designs'], false)
+  
+  //- +section('Test Section', 'Nulla in molestie odio. Morbi augue nisl, pretium at congue sed, fringilla a tortor. Ut ultrices mauris eget lectus aliquam condimentum. Nulla efficitur sed augue eu dignissim. Aliquam volutpat dui a urna congue, eget viverra dolor luctus. Praesent consequat neque ac erat porta, nec tristique nibh lacinia. Integer eget cursus ante. Donec quis libero nec diam scelerisque iaculis eu vitae mi. Proin interdum nibh sit amet sagittis cursus. Donec accumsan at turpis id dictum. Nam id posuere magna. Curabitur non dui ut nunc finibus commodo.', ['Designs'], false)
+  

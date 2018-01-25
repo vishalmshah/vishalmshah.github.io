@@ -1,0 +1,95 @@
+#landing
+  // display: relative
+  // background: $dark-slate-gray
+  // z-index: 4
+
+  .menuSection
+    z-index: 4
+
+    .menuBtn
+      margin: 0
+      padding: 0
+      width: 75px
+      height: 50px
+      // background: pink
+      display: flex
+      align-items: center
+      cursor: pointer
+      transition: all 0.4s ease
+
+      span, span:before, span:after
+        content: ''
+        background: $text-color
+        height: 2px
+        width: 75px
+        position: absolute
+        transition: all 0.1s ease
+        box-shadow: 0.5px 0.5px 2px $pale-torquoise
+
+      span:before
+        top: 20px
+        right: 25px
+        width: 50px
+
+      span:after
+        top: -20px
+        right: 0
+
+      &:hover span:before
+        width: 75px
+        right: 0
+
+        @media(max-width: $mobile-cutoff)
+          width: 50px
+          right: 25px
+
+      &.menuSelected span
+        transform-origin: center
+        transform: rotate(180deg)
+
+      &.menuSelected span:before
+        width: 40px
+        transform-origin: right
+        transform: rotate(-45deg)
+        top: 0
+        right: 0
+
+      &.menuSelected span:after
+        width: 40px
+        transform-origin: right
+        transform: rotate(45deg)
+        top: 0
+
+    @media (max-width: $mobile-cutoff)
+      // background-color: pink
+      padding-top: 62.5px
+      align-items: flex-start
+
+  .titleSection
+    justify-content: center
+    // align-items: center
+    flex-direction: column
+    z-index: 2
+
+    .mainTitle
+      font-family: $font-header
+      font-size: 80px
+      // line-height: 20%
+      // TODO: Maybe change shadow
+      // text-shadow: 1px 1px 1px $pale-torquoise
+      text-shadow: 1px 1px 1px $teal-blue
+
+    // .subTitle
+    //   // font-family: $font-header
+    //   line-height: 1.2
+    //   font-size: 30px
+    //   text-shadow: 1px 1px 1px $teal-blue
+    //
+    //   @media (max-width: $mobile-cutoff)
+    //     display: none
+
+
+  @media (max-width: $info-collapse)
+    justify-content: left
+    padding-left: 10px
+    width: auto

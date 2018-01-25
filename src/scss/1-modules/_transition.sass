@@ -1,0 +1,15 @@
+#transition
+  margin: 0
+  padding: 0
+  position: fixed
+  top: 0
+  left: -100%
+  width: 100%
+  height: 100vh
+  background-color: $brick-red
+  z-index: 5
+  transition: all 0.3s ease
+
+  &.transitioning
+    top: 0
+    left: 100%

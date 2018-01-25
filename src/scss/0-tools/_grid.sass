@@ -1,0 +1,35 @@
+body
+
+  .grid-container
+    width: 100%
+    height: 100vh
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+
+    .grid-leftItem
+      display: flex
+      align-items: center
+      justify-content: center
+      position: fixed
+      // width: 12.5%
+      width: 200px
+      height: 100%
+      z-index: 1
+      left: -100%
+      transition: all 0.8s ease
+
+      &.finished
+        left: 0
+
+        @media (max-width: $info-collapse)
+          width: 0px
+          left: 20px
+
+    .grid-mainCenter
+      display: flex
+      align-items: center
+      position: relative
+      width: 100%
+      height: 100%
