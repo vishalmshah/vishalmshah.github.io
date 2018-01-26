@@ -31,7 +31,8 @@ function startup($loader, $loaderTransition, $loadingText, $gridLeftItem) {
   // console.log(loadArray);
   // console.log(loadLength);
 
-  // TODO Idea is to type text and then fade into real screen
+  $('*').removeClass('allLoading');
+
   var i = 1;
   var interval = setInterval(function() {
     // console.log(i + " hello")
