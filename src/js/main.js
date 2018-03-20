@@ -7,6 +7,9 @@ $(document).ready(function(){
   $loadingText = $('.loadingText');
   $gridLeftItem = $('.grid-leftItem')
 
+  // For browser specific traits
+  document.documentElement.setAttribute("data-browser", navigator.userAgent);
+
   if (window.innerWidth > 800) {
     startup($loader, $loaderTransition, $loadingText, $gridLeftItem);
   } else {
