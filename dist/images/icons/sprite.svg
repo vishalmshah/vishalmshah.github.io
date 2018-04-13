@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="logo" viewBox="0 0 400 400"><defs><clipPath id="a"><path d="M0 0h400v400H0z"/></clipPath></defs><g clip-path="url(#a)"><path fill="rgba(0,0,0,0)" d="M0 0h400v400H0z"/><path d="M199.726 362.942L14.41 37.058l371.18.312-185.864 325.572z" fill-rule="evenodd" fill="#254E70"/></g>
+</symbol>
+<symbol id="sprite">
+<symbol id="logo" viewBox="0 0 400 400"><defs><clipPath id="a"><path d="M0 0h400v400H0z"/></clipPath></defs><g clip-path="url(#a)"><path fill="rgba(0,0,0,0)" d="M0 0h400v400H0z"/><path d="M199.726 362.942L14.41 37.058l371.18.312-185.864 325.572z" fill-rule="evenodd" fill="#254E70"/></g>
+</symbol>
+<symbol id="sprite">
+<symbol id="logo" viewBox="0 0 400 400"><defs><clipPath id="a"><path d="M0 0h400v400H0z"/></clipPath></defs><g clip-path="url(#a)"><path d="M0 0h400v400H0z"/><path d="M199.726 362.942L14.41 37.058l371.18.312-185.864 325.572z" fill-rule="evenodd" fill="#254E70"/></g>
+</symbol>
+</symbol>
+</symbol></svg>
